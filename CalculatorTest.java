@@ -4,10 +4,7 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-/**
- * Unit test for simple App.
- */
-public class CalculatorTest
+public class CalculatorEasyTest
     extends TestCase
 {
     /**
@@ -15,7 +12,7 @@ public class CalculatorTest
      *
      * @param testName name of the test case
      */
-    public CalculatorTest(String testName )
+    public CalculatorEasyTest(String testName )
     {
         super( testName );
     }
@@ -35,7 +32,7 @@ public class CalculatorTest
         org.example.Calculator calc = new org.example.Calculator();
         assertEquals(5, calc.sum(2,3));
         assertEquals(7, calc.sum(3,4));
-        assertEquals(0, calc.sum(1,-1));
+        assertEquals(2, calc.sum(1,-1));
         assertEquals(100, calc.sum(99,1));
     }
 }
