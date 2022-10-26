@@ -35,10 +35,6 @@ public class CalculatorTest
         org.example.Calculator calc = new org.example.Calculator();
         assertEquals(5, calc.sum(2,3));
         assertEquals(7, calc.sum(3,4));
-    }
-    
-    public void testApp(){
-        org.example.Calculator calc = new org.example.Calculator();
         assertEquals(0, calc.sum(1,-1));
         assertEquals(100, calc.sum(99,1));
     }
