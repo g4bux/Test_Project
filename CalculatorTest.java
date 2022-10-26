@@ -31,14 +31,15 @@ public class CalculatorTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
-    {
-        try{
-            org.example.Calculator calc = new org.example.Calculator();
-            assertEquals(5, calc.sum(2,3));
-            assertEquals(7, calc.sum(3,4));
-        }catch(Exception exc){
-            exc.printStackTrace();
-        }
+    public void easySum(){
+        org.example.Calculator calc = new org.example.Calculator();
+        assertEquals(5, calc.sum(2,3));
+        assertEquals(7, calc.sum(3,4));
+    }
+    
+    public void difficultSum(){
+        org.example.Calculator calc = new org.example.Calculator();
+        assertEquals(0, calc.sum(1,-1));
+        assertEquals(100, calc.sum(99,1));
     }
 }
