@@ -22,7 +22,7 @@ public class CalculatorEasyTest
      */
     public static Test suite()
     {
-        return new TestSuite( CalculatorTest.class );
+        return new TestSuite( CalculatorEasyTest.class );
     }
 
     /**
